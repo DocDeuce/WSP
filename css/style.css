@@ -11,16 +11,18 @@ h1 {
 }
 ul {
 	background: white;
+	border: 1.5px solid black;
 	list-style: none;
 	overflow: hidden;	
 }
 li {
 	display: block;
 	width: 25%;
+	line-height: 2em;
 	float: left;
 }
 section {
-	border: 1px solid black;
+	border: 1.5px solid black;
 	margin: 20px 0;
 	background: rgba(255,255,255,0.84);
 	padding: 0 3%;
@@ -30,15 +32,16 @@ section {
 	padding: .5px;
 }
 .target p {
-	margin: 5px;
+	margin: 8px;
 }
 .persona {
 	background: white;
+	border: 2px solid silver;
 	padding: .5px;
 	margin-bottom: 20px;
 }
 .persona p {
-	margin: 5px;
+	margin: 8px;
 }
 table {
 	text-align: left;
