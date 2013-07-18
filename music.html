@@ -1,29 +1,56 @@
-<!DOCTYPE html>
-<html lang="en">
+<!doctype html>
+<!--[if lt IE 7]> <html class="no-js lt-ie9 lt-ie8 lt-ie7" lang="en"> <![endif]-->
+<!--[if IE 7]>    <html class="no-js lt-ie9 lt-ie8" lang="en"> <![endif]-->
+<!--[if IE 8]>    <html class="no-js lt-ie9" lang="en"> <![endif]-->
+<!--[if gt IE 8]><!--><html class="no-js" lang="en"> <!--<![endif]-->
 <head>
-	<meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
-	<title></title>
-    <link rel="stylesheet" href="css/styles.css" />
+	<meta charset="utf-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+
+	<title>Responsive 996 Grid System</title>
+	<meta name="description" content="">
+	<meta name="author" content="">
+
+	<meta name="viewport" content="width=device-width">
+
+	<link rel="stylesheet" href="css/normalize.css">
+	<link rel="stylesheet" href="css/base.css">
+	<link rel="stylesheet" href="css/grid.css">
+	<link rel="stylesheet" href="css/style.css">
+	<link rel="stylesheet" href="css/demo.css">
+
+	<script src="js/modernizr-2.6.2.min.js"></script>
+	
 </head>
 
 <body>
-
-	<header>
-		<a href="index.html"><img src="images/dtwologo.png" alt="Doc Deuce Logo"></a>
-		<nav>
-			<ul>
-				<li><a href="about.html">About</a></li>
-				<li><a href="blog.html">Blog</a></li>
-				<li><a href="music.html">Music</a></li>
-				<li><a href="contact.html">Contact</a></li>
-				<li><a href="join.html">Join</a></li>
-			</ul>
-		</nav>
-	</header>
-
-	<div class="widget_iframe" style="display:inline-block;width:100%;height:320px;margin:0;padding:0;border:0;">
-		<iframe class="widget_iframe" src="http://www.reverbnation.com/widget_code/html_widget/artist_494084?widget_id=50&posted_by=artist_494084&pwc[design]=default&pwc[background_color]=%23333333&pwc[included_songs]=1&pwc[photo]=0%2C1&pwc[size]=fit" width="100%" height="100%" frameborder="0" scrolling="no"></iframe>
-	</div>
-
+	<div class="container">
+		<header class ="grid_2 alpha">
+			<a href="index.html"><img src="images/dtwologo.png" alt="Doc Deuce Logo"></a>
+			<nav>
+				<ul>
+					<li><a href="about.html">About</a></li>
+					<li><a href="blog.html">Blog</a></li>
+					<li><a href="music.html">Music</a></li>
+					<li><a href="contact.html">Contact</a></li>
+					<li><a href="join.html">Join</a></li>
+				</ul>
+			</nav>
+		</header>
+		
+		<aside class="grid_2 prefix_8">
+		<button>Login</button>
+		<a href="join.html">Join</a>
+		</aside> 
+	
+		<div class="grid_10">
+			<div class="widget_iframe" style="display:inline-block;width:100%;height:320px;margin:0;padding:0;border:0;">
+				<iframe class="widget_iframe" src="http://www.reverbnation.com/widget_code/html_widget/artist_494084?widget_id=50&posted_by=artist_494084&pwc[design]=default&pwc[background_color]=%23333333&pwc[included_songs]=1&pwc[photo]=0%2C1&pwc[size]=fit" width="100%" height="100%" frameborder="0" scrolling="no"></iframe>
+			</div>
+		</div>
+	</div><!-- End of container -->
+	
+<script type="text/javascript" src="http://ajax.googleapis.com/ajax/libs/jquery/1.9.0/jquery.min.js"></script>
+<script src="js/scripts.js"></script>
 </body>
+</html>

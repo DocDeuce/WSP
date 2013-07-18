@@ -1,65 +1,53 @@
-body {
-	width: 90%;
-	margin: 0 auto;
-	background: silver;
+/*
+Responsive 996px grid system ~ Style CSS.
+Copyright 2013, Josh Cope
+*/
+
+/* =============================================================================
+   Site Styles
+   ========================================================================== */
+.container {
+	border: 1px solid blue;
 }
 header {
-	margin: 0 auto;
+	border: 1px solid red;
 }
-h1 {
-	text-align: center;
+aside {
+	border: 1px solid green;
 }
-ul {
-	background: white;
-	border: 1.5px solid black;
-	list-style: none;
-	overflow: hidden;	
-}
-li {
-	display: block;
-	width: 25%;
-	line-height: 2em;
-	float: left;
-}
-section {
-	border: 1.5px solid black;
-	margin: 20px 0;
-	background: rgba(255,255,255,0.84);
-	padding: 0 3%;
-}
-.target {
-	background: silver;
-	padding: .5px;
-}
-.target p {
-	margin: 8px;
-}
-.persona {
-	background: white;
-	border: 2px solid silver;
-	padding: .5px;
-	margin-bottom: 20px;
-}
-.persona p {
-	margin: 8px;
-}
-table {
-	text-align: left;
-	border-spacing: 16px;
-	background: white;
-	margin-bottom: 20px;
-	border: 2px solid silver;
-}
-th {
-	width: 35%;
-}
-/*.companal {
-	overflow: hidden; 
-} */
-.companal p {
-	display: block;
-	float: left;
-	margin-right: 3%;
-	width: 50%;
-	clear: both;
-}
+/* =============================================================================
+   Page Styles
+   ========================================================================== */
+
+/* =============================================================================
+   Media Queries
+   ========================================================================== */
+
+/* Tablet Portrait size to Base 996px */
+@media only screen and (min-width: 768px) and (max-width: 995px) {}
+
+/* All Mobile Sizes */
+@media only screen and (max-width: 767px) {}
+
+/* Mobile Landscape Size to Tablet Portrait */
+@media only screen and (min-width: 480px) and (max-width: 767px) {}
+
+/* Mobile Portrait Size to Mobile Landscape Size */
+@media only screen and (max-width: 479px) {}
+
+
+/* =============================================================================
+   Font-Face
+   ========================================================================== */
+/* This is the proper syntax for an @font-face file
+
+/* @font-face {
+font-family: 'FontName';
+src: url('../fonts/FontName.eot');
+src: url('../fonts/FontName.eot?iefix') format('embedded-opentype'),
+url('../fonts/FontName.woff') format('woff'),
+url('../fonts/FontName.ttf') format('truetype'),
+url('../fonts/FontName.svg#FontName') format('svg');
+font-weight: normal;
+font-style: normal; }
+*/
