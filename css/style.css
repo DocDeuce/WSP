@@ -7,16 +7,457 @@ Copyright 2013, Josh Cope
    Site Styles
    ========================================================================== */
 
+.fullscreen {
+  z-index: -999;
+  min-height: 100%;
+  min-width: 1024px;
+  width: 100%;
+  height: auto;
+  position: fixed;
+  top: 0;
+  left: 0;
+}
+.widescreen {
+  z-index: -999;
+  min-height: 100%;
+  min-width: 1024px;
+  width: 100%;
+  max-width: 100%;
+  height: auto;
+  position: relative;
+  top: 0;
+  right: 0;
+}
+button {
+	border-radius: 0;
+	background-color: #ff993a;
+	font: small-caps 1em/1.5 "Raleway", sans-serif;
+	color: white; 
+	border: none;
+}
+button:hover {
+	color: #ff993a; 
+	background-color: white;
+}
+select {
+	border-radius: 0;
+	background-color: #ff993a;
+	font: small-caps 1em/1.5 "Raleway", sans-serif;
+	color: white; 
+	border: none;
+}
+.leftfix {
+	position: fixed;
+	width: 140px;
+}
+.leftfix img {
+	width: 100%;
+	max-width: 100%;	
+	opacity: 0.8;
+}
+.leftfix img:hover {
+	opacity: 1;
+}
+.leftfixhome {
+	position: fixed;
+	width: 180px;
+}
+.leftfixhome img {
+	width: 100%;
+	max-width: 100%;	
+}
+nav ul {
+	margin: 0;
+	padding: 0;
+}
+nav li {
+	font: small-caps 1.4em/2.1 "Raleway", sans-serif;
+	color: white;
+}
+nav p {
+	padding-left: 3px;
+	margin: 0;
+}
+nav a {
+	display: block;
+	text-decoration: none;
+	color: white;
+}
+nav a:visited {
+	color: white;
+}
+nav a:hover {
+	background: rgba(255,255,255,.54);
+}
+.rightfix {
+	width: 140px;
+	position: fixed;
+	top: 3px;
+	right: 0;
+	background: white;
+	overflow: hidden;
+}
+.rightfix a {
+	display: block;
+	float: left;
+	width: 70px;
+	color: #ff993a;
+	text-align: center;
+	text-decoration: none;
+}
+.rightfix a:hover {
+	background: rgba(255,153,58,.91);
+	color: white;
+}
+.headlines {
+	float: right;
+	margin-right: 0;
+	margin-top: 150px;
+	width: 260px;
+}
+.headlines h2 {
+	padding-right: 8px;
+	font: small-caps bold 3.2em/1 "Oswald", sans-serif;
+	margin: 0;
+}
+.headlines p {
+	padding-right: 8px;
+	font: 1.3em/1 "Raleway", sans-serif;
+	color: white;
+	margin: 0;
+}
+.headlines a {
+	display: block;
+	text-align: right;
+	text-decoration: none;
+	margin-top: 60px;
+	border-bottom: 1px solid white;
+}
+.headlines a:hover {
+	background: rgba(255,255,255,.54);
+}
+.feature {
+	position: fixed;
+	top: 0;
+	left: 250px;	
+}
+.feature h1 {
+	padding-left: 4px;
+	padding-top: 4px;
+	font: small-caps bold 8em/1 "Oswald", sans-serif; 
+	margin: 0;
+}
+.feature p {
+	padding-left: 4px;
+	font: 2.5em/1 "Raleway", sans-serif;
+	color: white;
+	margin: 0;
+}
+.feature a {
+	display: block;
+	text-decoration: none;
+	border-left: 2px solid white;
+}
+.feature a:hover {
+	background: rgba(255,255,255,.54);
+}
+.bottomfix {
+	position: fixed;
+	bottom: 4px;
+}
+.bottomfix h2 {
+	font: small-caps bold 3.2em/1 "Oswald", sans-serif;
+	color: white;
+	background: #ff993a;
+	margin: 0;
+	padding-left: 3px;
+	width: 130px;
+	display: block;
+	float: left;
+}
+.bottomfix ul {
+	background: rgba(255,255,255,.91);
+	display: inline-block;
+	width: 350px;
+}
+.bottomfix li {
+	display: inline;
+	margin: 10px;
+	font: 1.3em/2.85 "Raleway", sans-serif;
+	color: #ff993a;
+}
+.bottomfix a {
+	display: inline-block;
+}
+.bottomfix a:hover ul{
+	background: rgba(255,153,58,.91);
+}
+.bottomfix a:hover li{
+	color: white;
+}
+.art {
+	color: #4839db;
+}
+.act {
+	color: #2f5e29;
+}
+.ent {
+	color: #1a0d99;
+}
+.part {
+	background: #4839db;
+}
+.pact {
+	background: #2f5e29;
+}
+.pent {
+	background: #1a0d99;
+}
 /* =============================================================================
    Page Styles
    ========================================================================== */
+#about .navabout{
+	border-bottom: 1px solid white;
+}
+#abouttop {
+	clear: both;
+	overflow: hidden;
+	height: 700px;
+	margin: 0;
+	background-color: black;
+	background-image: url(../images/docsmile.jpg);
+	background-repeat: no-repeat;
+	background-position: top, center;
+	background-attachment: fixed;
+}
+#abouttop a{
+	display: block;
+	margin: 140px auto;
+	border: 2px solid blue;
+	width: 650px;
+	color: #ff993a;
+}
+.about {
+	/*display: block;
+	clear: both;*/
+	overflow: hidden;
+	width: 100%;
+	height: 820px;
+	overflow: hidden;
+}
+.about h2 {
+	font: small-caps bold 6em/1 "Oswald", sans-serif;
+	margin: 0; 
+	padding-left: 200px;
+	padding-top: 10px;
+	color: white;
+	/*float: left;*/
+}
+.about a {
+	float: right;
+	/*margin-right: 220px;
+	margin-top: -7px;*/
+	text-decoration: none;
+	font: .9em/1.1 'Raleway', arial, sans-serif;
+	color: white;
+	background: #ff993a;
+	
+}
+.about a:visited {
+	color: white;
+}
+.about a:hover {
+	color: #ff993a;
+	background: white;
+}
+article p {
+	font: 1.3em/1.5 'Raleway', arial, sans-serif;
+	color: white;
+	padding: 10px;
+	margin-top: 60px;
+}
+.pintro {
+	font: 2.2em 'Raleway', arial, sans-serif;
+}
+#artband {
+	margin: 0;
+	height: 120px;
+	background-color: #4839db;
+}
+#aboutartist {
+	background-color: black;
+	background-image: url(../images/docartist.jpg);
+	background-repeat: no-repeat;
+	background-position: bottom, center;
+	background-attachment: fixed;
+}
+#aboutartist p {
+	background: rgba(72,75,219,.8);
+}
+#actband {
+	margin: 0;
+	height: 120px;
+	background-color: #2f5e29;
+}
+#aboutactivist {
+	background-color: black;
+	background-image: url(../images/docactivist.jpg);
+	background-repeat: no-repeat;
+	background-position: center, center;
+	background-attachment: fixed;
+}
+#aboutactivist p {
+	background: rgba(47,94,41,.8);
+}
+#entreband {
+	margin: 0;
+	height: 120px;
+	background-color: #1a0d99;
+}
+#aboutentre {
+	background-color: black;
+	background-image: url(../images/docentre.jpg);
+	background-repeat: no-repeat;
+	background-position: bottom, center;
+	background-attachment: fixed;
+}
+#aboutentre p {
+	background: rgba(26,13,153,.8);
+}
+#blog {
+	background: black;
+}
+#blog .navblog {
+	border-bottom: 1px solid white;
+}
+.blogimg {
+	border: 1px solid black;
+	margin-bottom: 30px;
+	height: 450px;
+}
+.blogimg h2 {
+	font: small-caps bold 3.2em/1 "Oswald", sans-serif;
+	text-align: right;
+	margin: 0;
+}
+.blogimg p {
+	font: 1.3em/1 "Raleway", sans-serif;
+	color: white;
+	text-align: right;
+	margin: 0;
+}
+.blogtitles {
+	margin-top: -130px;
+}
+.recess {
+	position: relative;
+	z-index: -999;
+}
+#contact .navcontact {
+	border-bottom: 1px solid white;
+}
+#getintouch {
+	background: rgba(72,75,219,.8);
+}
+#getintouch h1 {
+	font: small-caps bold 8em/1 "Oswald", sans-serif;
+	color: white;
+	text-align: center;
+	margin: 0;
+}
+#getintouch p {
+	font: 1.3em/1.5 'Raleway', arial, sans-serif;
+	color: white;
+	padding: 0 20px;
+}
+label {
+	font: 1em/1 "Oswald", sans-serif;
+	color: white;
+}
+.form {
+	overflow: hidden;
+	margin-bottom: 20px;
+}
+form input {
+	float: right;
+}
+form button {
+	float: right;
+}
+select {
+	float: right;
+}
+textarea {
+	float: right;
+}
+.sociallist ul {
+	list-style-type: none;
+	margin: 20px 0;
+	padding: 0;
+	overflow: hidden;
+}
+.sociallist ul li a {
+	width: 83px;
+	float: left;
+	margin: 0 28px 0 0;	
+}
+#last a {
+	margin: 0;
+}
+.sociallist ul li a:hover {
+	width: 90px;
+	margin-right: 21px;
+}
 
+#last a:hover {
+	margin: 0 0 0 -7px;
+}
+.scoot {
+	border: 1px solid rgba(0,0,0,0);
+} /*the prefix_2 class didn't place the background properly*/
+#join .navjoin {
+	border-bottom: 1px solid white;
+}
+#joinbox {
+	background: rgba(26,13,153,.8);
+	margin-top: 320px;
+}
+#joinbox h2 {
+	font: small-caps bold 3.2em/1 "Oswald", sans-serif;
+	color: white;
+	margin: 20px 0 0 0;
+	padding-left: 10px;
+}
+#joinbox p {
+	font: 1.3em/1.5 'Raleway', arial, sans-serif;
+	color: white;
+	padding: 0 10px 10px 10px;
+}
+#joinbox form {
+	margin-top: 60px;
+	padding-right: 10px;
+	padding-top: 0;
+}
+#joinbox input {
+	width: 200px;
+}
+#music {
+	background: black;
+}
+#music .navmusic {
+	border-bottom: 1px solid white;
+}
+.music {
+	margin-top: 100px;
+}
 /* =============================================================================
    Media Queries
    ========================================================================== */
 
 /* Tablet Portrait size to Base 996px */
-@media only screen and (min-width: 768px) and (max-width: 995px) {}
+@media only screen and (min-width: 768px) and (max-width: 995px) {
+.feature h1 { border: 1px solid white; }
+}
 
 /* All Mobile Sizes */
 @media only screen and (max-width: 767px) {}

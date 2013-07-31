@@ -18,58 +18,72 @@
 	<link rel="stylesheet" href="css/grid.css">
 	<link rel="stylesheet" href="css/style.css">
 	<link rel="stylesheet" href="css/demo.css">
+	<link href='http://fonts.googleapis.com/css?family=Open+Sans:300' rel='stylesheet' type='text/css'>
+	<link href='http://fonts.googleapis.com/css?family=Oswald' rel='stylesheet' type='text/css'>
+	<link href='http://fonts.googleapis.com/css?family=Raleway' rel='stylesheet' type='text/css'>
 
 	<script src="js/modernizr-2.6.2.min.js"></script>
 	
 </head>
 
-<body>
-	<div class="container">
-		<header class ="grid_2 alpha">
-			<a href="index.html"><img src="images/d2_violet.png" alt="Doc Deuce Logo"></a>
-			<nav>
-				<ul>
-					<li><a href="about.html">About</a></li>
-					<li><a href="blog.html">Blog</a></li>
-					<li><a href="music.html">Music</a></li>
-					<li><a href="contact.html">Contact</a></li>
-					<li><a href="join.html">Join</a></li>
-				</ul>
-			</nav>
-		</header>
-		
-		<aside class="grid_2 prefix_8">
-		<button>Login</button>
+<body id="join">
+
+	<img src="images/docbeckon.jpg" alt="Doc Deuce Beckoning" class="fullscreen"/>
+	<header class="leftfix">
+		<a href="index.html"><img src="images/logowhite.png" alt="Doc Deuce Logo"></a>						
+		<nav>
+			<ul>
+				<li><a href="about.html" class="navabout"><p>About</p></a></li>
+				<li><a href="blog.html" class="navblog"><p>Blog</p></a></li>
+				<li><a href="music.html" class="navmusic"><p>Music</p></a></li>
+				<li><a href="contact.html" class="navcontact"><p>Contact</p></a></li>
+				<li><a href="join.html" class="navjoin"><p>Join</p></a></li>
+			</ul>
+		</nav>					
+	</header>
+	
+	<aside class="rightfix">
+		<a href="">Login</a>
 		<a href="join.html">Join</a>
-		</aside> 	
-		
-		<div class="grid_8">
-			<form method="post">
-				<div class="form">
-					<label for="name_first">First Name</label>
-					<input type="text" name="name_first" id="name_first" />
-				</div>
-				<div class="form">
-					<label for="name_last">Last Name</label>
-					<input type="text" name="name_last" id="name_last" />
-				</div>
-				<div class="form">
-					<label for="email">Email</label>
-					<input type="text" name="email" id="email" />
-				</div>
-				<div class="form">
-					<label for="password">Password</label>
-					<input type="password" name="password" id="password" />
-				</div>
-				<div class="form">
-					<label for="password_confirm">Confirm Password</label>
-					<input type="password" name="password_confirm" id="password_confirm" />
-				</div>
-				<div class="form">
-					<button type="submit" name="submit" class="button">Submit</button>
-				</div>
-			</form>
+	</aside>
+	 	
+	<div class="container">	
+		<div class="grid_2 scoot">
 		</div>
+		<div class="grid_10 alpha omega" id="joinbox">
+			<div class="grid_5 alpha">
+				<h2>Join Me</h2>
+				<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
+			</div>
+			
+			<div class="grid_5 omega">
+				<form method="post">
+					<div class="form">
+						<label for="name_first">First Name</label>
+						<input type="text" name="name_first" id="name_first" />
+					</div>
+					<div class="form">
+						<label for="name_last">Last Name</label>
+						<input type="text" name="name_last" id="name_last" />
+					</div>
+					<div class="form">
+						<label for="email">Email</label>
+						<input type="text" name="email" id="email" />
+					</div>
+					<div class="form">
+						<label for="password">Password</label>
+						<input type="password" name="password" id="password" />
+					</div>
+					<div class="form">
+						<label for="password_confirm">Confirm Password</label>
+						<input type="password" name="password_confirm" id="password_confirm" />
+					</div>
+					<div class="form">
+						<button type="submit" name="submit" class="button">Submit</button>
+					</div>
+				</form>
+			</div>
+		</div>	
 	</div><!-- End of container -->
 
 <script type="text/javascript" src="http://ajax.googleapis.com/ajax/libs/jquery/1.9.0/jquery.min.js"></script>
