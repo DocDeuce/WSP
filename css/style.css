@@ -230,12 +230,21 @@ nav a:hover {
 	background-position: top, center;
 	background-attachment: fixed;
 }
-#abouttop a{
+#abouttop a {
 	display: block;
 	margin: 140px auto;
-	border: 2px solid blue;
+	border: 1px solid white;
 	width: 650px;
 	color: #ff993a;
+}
+#abouttop a:visited {
+	
+}
+#abouttop a:hover {
+	background: rgba(255,255,255,.54)
+}
+#abouttop a:active {
+	width: 620px;
 }
 .about {
 	/*display: block;
@@ -346,6 +355,9 @@ article p {
 	text-align: right;
 	margin: 0;
 }
+.blogimg a {
+	display: block;
+}
 .blogtitles {
 	margin-top: -130px;
 }
@@ -434,7 +446,7 @@ textarea {
 	padding: 0 10px 10px 10px;
 }
 #joinbox form {
-	margin-top: 60px;
+	margin-top: 40px;
 	padding-right: 10px;
 	padding-top: 0;
 }
