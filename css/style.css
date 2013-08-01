@@ -22,7 +22,7 @@ Copyright 2013, Josh Cope
   min-height: 100%;
   min-width: 1024px;
   width: 100%;
-  max-width: 100%;
+  width: 100%;
   height: auto;
   position: relative;
   top: 0;
@@ -241,7 +241,7 @@ nav a:hover {
 	
 }
 #abouttop a:hover {
-	background: rgba(255,255,255,.54)
+	background: rgba(255,255,255,.54);
 }
 #abouttop a:active {
 	width: 620px;
@@ -340,30 +340,37 @@ article p {
 	border-bottom: 1px solid white;
 }
 .blogimg {
-	border: 1px solid black;
 	margin-bottom: 30px;
-	height: 450px;
+	height: 436px;
 }
 .blogimg h2 {
 	font: small-caps bold 3.2em/1 "Oswald", sans-serif;
 	text-align: right;
 	margin: 0;
+	position: relative;
+	bottom: 75px;
 }
 .blogimg p {
 	font: 1.3em/1 "Raleway", sans-serif;
 	color: white;
 	text-align: right;
 	margin: 0;
+	position: relative;
+	bottom: 75px;
+	
 }
 .blogimg a {
 	display: block;
+	text-decoration: none;
 }
-.blogtitles {
-	margin-top: -130px;
+.blogimg img {
+	max-width: 100%;
 }
 .recess {
 	position: relative;
 	z-index: -999;
+	top: 0;
+	left: 0;
 }
 #contact .navcontact {
 	border-bottom: 1px solid white;
@@ -468,17 +475,89 @@ textarea {
 
 /* Tablet Portrait size to Base 996px */
 @media only screen and (min-width: 768px) and (max-width: 995px) {
-.feature h1 { border: 1px solid white; }
+	.feature {left: 200px;}
+	.feature h1 {font: small-caps bold 6em/1 "Oswald", sans-serif; }
+	.feature p {font: 2em/1 "Raleway", sans-serif;}
+	.feature a:active {background: rgba(255,255,255,.54)}
+	.headlines {margin-top: 100px; width: 250px;}
+	.headlines h2 {font: small-caps bold 3em/1 "Oswald", sans-serif;}
+	.headlines p {font: 1.17em/1 "Raleway", sans-serif;}
+	.headlines a {margin-top: 53px;}
+	.headlines a:active {background: rgba(255,255,255,.54)}
+	.bottomfix h2 {font: small-caps bold 2.9em/1 "Oswald", sans-serif; padding-left: 3px; width: 115px;}
+	.bottomfix ul {width: 320px;}
+	.bottomfix li {font: 1.2em/2.65 "Raleway", sans-serif;}
+	#abouttop {height: 550px;}
+	#abouttop a {width: 480px;}
+	#abouttop a:active {width: 440px;}
+	.about {height: auto;}
+	.about h2 {padding-left: 140px;}
+	.about p {margin-top: 30px;}
+	.blogimg {border: 1px solid red; margin-bottom: 20px; height: 273px;}
+	.blogimg a {padding-left: 140px;}
+	.sociallist ul li a {width: 75px; margin-right: 9px;}
+	.sociallist ul li a:hover {width: 80px; margin-right: 4px;}
+	#join label {display: inline-block; width: 73px;}
+	#join input {width: 180px;}
 }
-
-/* All Mobile Sizes */
-@media only screen and (max-width: 767px) {}
+/* All Mobile Sizes
+@media only screen and (max-width: 767px) {
+	.container {border: 1px solid red; }
+} */
 
 /* Mobile Landscape Size to Tablet Portrait */
-@media only screen and (min-width: 480px) and (max-width: 767px) {}
+@media only screen and (min-width: 480px) and (max-width: 767px) {
+	.leftfix {width: 90px;}
+	.home .fullscreen {left: -200px;}
+	
+	.feature {top: auto; bottom: 0; left: auto; right: auto;}
+	.feature h1 {font: small-caps bold 5.5em/1 "Oswald", sans-serif; }
+	.feature p {font: 1.6em/1 "Raleway", sans-serif;}
+	.headlines {margin-top: 0; width: 240px;}
+	.headlines h2 {font: small-caps bold 2.4em/1 "Oswald", sans-serif;}
+	.headlines p {font: 1.09em/1 "Raleway", sans-serif;}
+	.bottomfix {bottom: 120px;}
+	.bottomfix h2 {font: small-caps bold 2.4em/1 "Oswald", sans-serif; padding-left: 3px; width: 96px;}
+	.bottomfix ul {width: 320px;}
+	.bottomfix li {font: 1.2em/2.3 "Raleway", sans-serif;}
+	
+	#abouttop {height: auto; background-position: -600px 0;}
+	#abouttop a {width: 60%; margin: 40px auto;}
+	#abouttop a:active {width: 60%; margin: 40px auto; background: rgba(255,255,255,.54);}
+	#artband {height: 92px;}
+	#actband {height: 92px;}
+	#entreband {height: 92px;}
+	.about {height: auto;}
+	.about h2 {padding-left: 90px; font: small-caps bold 4.5em/1 "Oswald", sans-serif;}
+	.about p {margin: 20px 0 20px 70px;}
+	
+	
+	
+	#aboutartist {background-position: 0 100px;}
+	.blogimg {margin-bottom: 6px; height: 145px;}
+	.blogimg a {padding-left: 90px;}
+	.blogimg h2 {font: small-caps bold 1.8em/1 "Oswald", sans-serif; bottom: 45px;}
+	.blogimg p {font: .9em/1 "Raleway", sans-serif; bottom: 45px;}
+	.music {position: fixed; right: 0; z-index: -999; margin-top: 40px; /*padding-left: 56px;*/}
+	.widget_iframe {width: 362px; margin-left: 56px;}
+	#contact .container, #join .container {width: 380px; margin-left: 90px;}
+	#contact .grid_8, #joinbox .grid_5 {width: 380px;}
+	#contact h1 {font: small-caps bold 6em/1 "Oswald", sans-serif; margin-left: -30px;}
+	#getintouch p {font: 1.1em/1.3 'Raleway', arial, sans-serif; padding: 0 10px;}
+	#contact form, #join form {width: 350px;}
+	.sociallist ul li a {width: 100px; margin: 0 30px 20px 0;}
+	#nexttolast a {margin: 0;}
+	.sociallist ul li a:hover {width: 80px; margin-right: 4px;}
+	#joinbox h2 {padding: 0;}
+	#joinbox p {padding: 0 10px 0 0;}
+	#join label {width: 73px;}
+	
+}
 
 /* Mobile Portrait Size to Mobile Landscape Size */
-@media only screen and (max-width: 479px) {}
+@media only screen and (max-width: 479px) {
+	.container {border: 1px solid black; }
+}
 
 
 /* =============================================================================
