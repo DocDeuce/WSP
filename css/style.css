@@ -96,6 +96,7 @@ nav a:hover {
 	right: 0;
 	background: white;
 	overflow: hidden;
+	font: 1.1em/1.6 "Raleway", sans-serif;
 }
 .rightfix a {
 	display: block;
@@ -105,7 +106,28 @@ nav a:hover {
 	text-align: center;
 	text-decoration: none;
 }
-.rightfix a:hover {
+.homerightfix a:hover {
+	background: rgba(255,153,58,.91);
+	color: white;
+}
+.homerightfix {
+	width: 140px;
+	position: fixed;
+	top: 3px;
+	right: 0;
+	background: white;
+	overflow: hidden;
+	font: 1.1em/1.6 "Raleway", sans-serif;
+}
+.homerightfix a {
+	display: block;
+	float: left;
+	width: 70px;
+	color: #ff993a;
+	text-align: center;
+	text-decoration: none;
+}
+.homerightfix a:hover {
 	background: rgba(255,153,58,.91);
 	color: white;
 }
@@ -335,6 +357,7 @@ article p {
 }
 #blog {
 	background: black;
+	background-image: url(../images/pw_maze_black.png);
 }
 #blog .navblog {
 	border-bottom: 1px solid white;
@@ -461,7 +484,8 @@ textarea {
 	width: 200px;
 }
 #music {
-	background: black;
+	background-color: black;
+	background-image: url(../images/pw_maze_black.png);
 }
 #music .navmusic {
 	border-bottom: 1px solid white;
@@ -493,7 +517,7 @@ textarea {
 	.about {height: auto;}
 	.about h2 {padding-left: 140px;}
 	.about p {margin-top: 30px;}
-	.blogimg {border: 1px solid red; margin-bottom: 20px; height: 273px;}
+	.blogimg {margin-bottom: 20px; height: 273px;}
 	.blogimg a {padding-left: 140px;}
 	.sociallist ul li a {width: 75px; margin-right: 9px;}
 	.sociallist ul li a:hover {width: 80px; margin-right: 4px;}
@@ -508,8 +532,11 @@ textarea {
 /* Mobile Landscape Size to Tablet Portrait */
 @media only screen and (min-width: 480px) and (max-width: 767px) {
 	.leftfix {width: 90px;}
-	.home .fullscreen {left: -200px;}
-	
+	#home .fullscreen {left: -200px;}
+	.rightfix { width: 90px; top: 320px; right: auto; left: 0;}
+	.rightfix a{width: 90px;}
+	.rightfix a:active {background: rgba(255,153,58,.91); color: white;}
+	#nojoin {display: none;}
 	.feature {top: auto; bottom: 0; left: auto; right: auto;}
 	.feature h1 {font: small-caps bold 5.5em/1 "Oswald", sans-serif; }
 	.feature p {font: 1.6em/1 "Raleway", sans-serif;}
@@ -520,7 +547,6 @@ textarea {
 	.bottomfix h2 {font: small-caps bold 2.4em/1 "Oswald", sans-serif; padding-left: 3px; width: 96px;}
 	.bottomfix ul {width: 320px;}
 	.bottomfix li {font: 1.2em/2.3 "Raleway", sans-serif;}
-	
 	#abouttop {height: auto; background-position: -600px 0;}
 	#abouttop a {width: 60%; margin: 40px auto;}
 	#abouttop a:active {width: 60%; margin: 40px auto; background: rgba(255,255,255,.54);}
@@ -529,10 +555,7 @@ textarea {
 	#entreband {height: 92px;}
 	.about {height: auto;}
 	.about h2 {padding-left: 90px; font: small-caps bold 4.5em/1 "Oswald", sans-serif;}
-	.about p {margin: 20px 0 20px 70px;}
-	
-	
-	
+	.about p {margin: 20px 0 20px 70px;}	
 	#aboutartist {background-position: 0 100px;}
 	.blogimg {margin-bottom: 6px; height: 145px;}
 	.blogimg a {padding-left: 90px;}
@@ -549,9 +572,9 @@ textarea {
 	#nexttolast a {margin: 0;}
 	.sociallist ul li a:hover {width: 80px; margin-right: 4px;}
 	#joinbox h2 {padding: 0;}
-	#joinbox p {padding: 0 10px 0 0;}
+	#joinbox p {padding-right: 20px;}
+	#joinbox form {margin-top: 10px;}
 	#join label {width: 73px;}
-	
 }
 
 /* Mobile Portrait Size to Mobile Landscape Size */
