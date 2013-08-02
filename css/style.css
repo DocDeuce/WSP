@@ -106,7 +106,7 @@ nav a:hover {
 	text-align: center;
 	text-decoration: none;
 }
-rightfix a:hover {
+.rightfix a:hover {
 	background: rgba(255,153,58,.91);
 	color: white;
 }
